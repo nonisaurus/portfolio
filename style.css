@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'grance';
+  src: url('./font/grance-font/GranceDemo-2ORye.otf'),
+}
+@font-face {
+  font-family: 'oregon';
+  src: url('./font/oregon-ldo-font/'),
+}
+
+.devicon-devicon-plain {
+  max-width: 1em;
+}
+
+/* if you want to change the original color */
+.devicon-devicon-plain path {
+  fill: #4691f6;
+}
+
+.fontsize-icon {
+  font-size: 1.2rem;
+}
+
+.icon-size{
+  width: 50%;
+}
+
+.oregon {
+  font-family: 'oregon';
+}
+
+.grance {
+  font-family: 'grance';
+}
+
+.navbarlinks {
+  font-family: 'grance';
+  color: rgb(160, 106, 211);
+  text-decoration: none;
+}
+
+.navbarlinks:hover {
+  background: rgb(216,192,245);
+  background: radial-gradient(to circle, rgba(216,192,245,1) 1%, rgba(254,255,245,1) 100%);
+  border-radius: 50%;
+}
+
+body {
+  background-color: rgb(254, 255, 245);
+}
+
+.nav-bck{
+  background: linear-gradient(to bottom, rgb(236, 194, 238) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.smaller-pic {
+  height: 3rem;
+  object-fit: cover;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.pink-bck {
+  background-color: rgb(245, 207, 239);
+  border: none;
+  box-shadow: 2%;
+}
+
+img{
+  height:150px;
+  width:100%;
+}
+
+.item{
+  padding-left:5px;
+  padding-right:5px;
+}
+.item-card{
+  transition:0.5s;
+}
+.item-card-title{  
+  transition:1s;
+}
+.item-card-title i{  
+  transition:1s;
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;  
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+footer p {
+  padding: 40px 0;
+  text-align: center;
+  font-family: 'glance';
+}
