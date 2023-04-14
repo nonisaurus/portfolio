@@ -7,22 +7,10 @@
   src: url('./font/oregon-ldo-font/'),
 }
 
-.devicon-devicon-plain {
-  max-width: 1em;
-}
-
-/* if you want to change the original color */
-.devicon-devicon-plain path {
-  fill: #4691f6;
-}
-
 .fontsize-icon {
   font-size: 1.2rem;
 }
 
-.icon-size{
-  width: 50%;
-}
 
 .oregon {
   font-family: 'oregon';
@@ -32,6 +20,22 @@
   font-family: 'grance';
 }
 
+
+.pink-bck {
+  border: solid 2px rgb(245, 192, 255);
+  box-shadow: 2%;
+  color: #a992de;
+
+}
+
+.pink-bck:hover {
+  border: solid 2px rgb(250, 228, 255);
+  background-color: rgb(164, 169, 255);
+  box-shadow: 2%;
+  color: #fafbd1;
+}
+
+/*----  Navbar  ----*/
 .navbarlinks {
   font-family: 'grance';
   color: rgb(160, 106, 211);
@@ -39,9 +43,8 @@
 }
 
 .navbarlinks:hover {
-  background: rgb(216,192,245);
-  background: radial-gradient(to circle, rgba(216,192,245,1) 1%, rgba(254,255,245,1) 100%);
-  border-radius: 50%;
+  color: rgb(100, 105, 216);
+  text-decoration: none;
 }
 
 body {
@@ -57,68 +60,222 @@ body {
   object-fit: cover;
 }
 
-.selector-for-some-widget {
-  box-sizing: content-box;
+/*----  Projects  ----*/
+.card-btn a{
+  background-color: inherit;
+  border: 2px rgb(244, 201, 247) solid;
 }
 
-.pink-bck {
-  background-color: rgb(245, 207, 239);
-  border: none;
-  box-shadow: 2%;
+.card-btn a:hover{
+  background-color: rgb(244, 201, 247);
+  border: 2px rgb(255, 206, 255) solid;
+  color: white;
 }
 
-img{
-  height:150px;
-  width:100%;
+#projects{
+  text-align: center;
 }
 
-.item{
-  padding-left:5px;
-  padding-right:5px;
-}
-.item-card{
-  transition:0.5s;
-}
-.item-card-title{  
-  transition:1s;
-}
-.item-card-title i{  
-  transition:1s;
-}
-.card-title i:hover{
-  transform: scale(1.25) rotate(100deg); 
-}
-.card:hover{
-  transform: scale(1.05);
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-}
-.card-text{
-  height:80px;  
+#projects .container{
+  padding-top: 80px; 
+  padding-bottom: 100px;
 }
 
-.card::before, .card::after {
+#projects a{
+  text-decoration: none;
+  outline: none;
+}
+
+#projects .card-section {
+  border-radius: 2%;
+}
+#projects .card-section .image-box{
+  background: rgb(255, 255, 255, 1);
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgb(251, 255, 197);
+  border-radius: 2%;
+}
+
+#projects .card-section .image-box img{
+  width: 100%;
+  height: 200px;
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  border-radius: 10%;
+}
+
+#projects .card-section:hover .image-box img{
+  -webkit-transform:scale(1.05);
+  -moz-transform:scale(1.05);
+  -ms-transform:scale(1.05);
+  -o-transform:scale(1.05);
+  transform:scale(1.05);
+}
+
+#projects .card-section .text-box{
+  text-align: center;
+}
+
+#projects .card-section .text-box .text-container{
+  padding: 30px 18px;
+}
+
+#projects .card-section{
+  background: #FFFFFF;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(251, 11, 255, 0.2);
+}
+
+#projects .card-section:hover{
+  background: #fff;
+  box-shadow: 2px 5px 10px rgba(147, 14, 255, 0.5);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+
+#projects .card-section .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-family: 'glance';
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: rgb(68, 68, 68);
+}
+
+#projects .card-section .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'glance';
+  letter-spacing: 1px;
+  color: #af6ce2;
+}
+  
+
+/*----  Skills  ----*/
+.icon-size{
+  width: 50%;
+}
+
+
+/*----  Contact  ----*/
+.connect-links a{
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+}
+
+
+/*----  Footer  ----*/
+  footer p {
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'glance';
+  }
+
+
+/*----  Interest  ----*/
+.int-pic figure {
+  float: left;
+  margin: 10px 1%;
+  height: 15rem;
+  max-height: 225px;
+  max-width: 480px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.int-pic figure figcaption,
+.int-pic figure figcaption > a {
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: scale3d(0, 0, 1);
-  transition: transform .3s ease-out 0s;
-  content: '';
-  pointer-events: none;
-}
-.card::before {
-  transform-origin: left top;
-}
-.card::after {
-  transform-origin: right bottom;
-}
-.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
-  transform: scale3d(1, 1, 1);
+  width: 100%;
 }
 
-footer p {
-  padding: 40px 0;
-  text-align: center;
-  font-family: 'glance';
+.int-pic figure figcaption {
+  backface-visibility: hidden;
+  color: #957ee0;
+  font-size: 1em;
+}
+
+.int-pic figure p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.int-pic figure.softeffect {
+  background: none repeat scroll 0 0 #000000;
+}
+
+.int-pic figure.softeffect img {
+  transition: opacity .35s ease 0s, transform .35s ease 0s;
+}
+
+figure.softeffect:hover img {
+  opacity: 0.35;
+  transform: scale(1);
+}
+
+.int-pic figure.softeffect figcaption:before,
+.int-pic figure.softeffect p {
+  opacity: 0;
+  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+
+.int-pic figure.softeffect p {
+  margin: 0 auto;
+  max-width: 200px;
+  transform: scale(1.5);
+}
+
+.int-pic figure.softeffect:hover figcaption:before,
+.int-pic figure.softeffect:hover p {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.int-pic figure img {
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+  opacity: 1;
+  position: relative;
+}
+
+figure.softeffect {
+  background: none repeat scroll 0 0 transparent;
+}
+
+figure.softeffect:hover {
+  background: none repeat scroll 0 0 #000000;
+}
+
+figure.softeffect img {
+  transform: scale(1);
+  transition: opacity .35s ease 0s, transform .35s ease 0s;
+}
+
+figure.softeffect:hover img {
+  opacity: 0.40;
+  transform: scale(1.15);
+  filter: blur(2px);
 }

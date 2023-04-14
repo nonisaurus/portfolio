@@ -20,7 +20,7 @@
   <nav class="navbar navbar-expand-lg navbar-default fixed-top nav-bck ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="./img/bowbrandasset.png" alt="" class="smaller-pic">
+        <img src="./img/bowbrandasset.png" alt="logo" class="smaller-pic">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
 
 
   <!-- Intro -->
-  <section id="intro" class="pt-5 pb-5">
+  <section id="intro" class="pt-5 pb-2">
     <div class="container mt-5">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-5 text-center text-md-start mx-auto">
@@ -60,10 +60,10 @@
                     <div class="display-4 grance">Noni Summers</div>
                     <div class="display-6 text-muted fs-4">Junior Web Developer</div>
                 </h1>
-                <a href="#contact" class="btn btn-secondary mt-3 btn-sm pink-bck">get in touch</a>
+                <a href="#contact" class="btn mt-3 btn-sm pink-bck">get in touch</a>
             </div>
             <div class="col-md-5 text-center d-none d-md-block">
-                <img class="img-fluid" src="./img/profilepic1.jpg" width="500" alt="intro pic of noni and pickles">
+                <img class="img-fluid" src="./img/prortfolio2.jpg" width="500" alt="intro pic of noni and pickles">
             </div>
         </div>
     </div>
@@ -71,193 +71,247 @@
 
 
   <!-- About -->
-  <section id="about" class="grance mt-5 mb-5">
-    <div class="container ">
-      <div class="row align-items-center">
-        <h2 >Who is Noni?</h2>
+  <section id="about" class="grance mt-5 mb-2">
+    <div class="container-md">
+      <div class="row align-items-center text-center">
+        <h2 class="" >Who is Noni?</h2>
         <div class="container p-5 d-flex justify-content-center">
-          <p  class="fs-6 text-justify">As an ambitious and driven individual, I left my home country of Hungary in 2012 with a strong desire to build a better life for myself. After a decade of working as a nanny, I realised that my true passion lay in tech. After building initial skills with CodeAcademy, I have now honed my skills and knowledge further with General Assembly's Software Engineering Immersive Course. Today, I am seeking a role in a company where I can continue to learn, develop, and collaborate with like-minded professionals to build my career in Tech.</p>
+          <p  class="fs-6 lh-lg">As an ambitious and driven individual, I left my home country of Hungary in 2012 with a strong desire to build a better life for myself. After a decade of working as a nanny, I realised that my true passion lay in tech. After building initial skills with CodeAcademy, I have now honed my skills and knowledge further with General Assembly's Software Engineering Immersive Course. Today, I am seeking a role in a company where I can continue to learn, develop, and collaborate with like-minded professionals to build my career in Tech.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+    <!-- Projects -->
+  <section  id="projects">
+    <div class="col grance text-center">
+      <h2 class="pb-3">Projects</h2>
+      <!-- <p class="fs-6 text-justify pt-3">I'm excited to share my projects with you. </p> -->
+    </div>
+
+    <div class="container-md">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card-section">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="./img/3project-ga.png" alt="love letters" />
+                            </div>
+                            <div class="text-container">                                    
+                                <h6>Love Letters</h6>
+                                <p class="card-text"><small class="text-muted">React.js Bootstrap MongoDB Mongoose NodeJs Passport Passport-jwt Bcrypt Jsonwebtoken</small></p>
+                                <p>I built a full-stack web application using React.js on the front-end and Node.js on the back-end, with data storage managed by MongoDB. To ensure secure access and authorization, I integrated Passport, Passport-jwt, Bcrypt, and Jsonwebtoken.</p>
+                            </div>
+                        </div>
+                        <div  class="card-body card-btn">
+                          <a href="https://github.com/nonisaurus/love-letters-app" target="_blank"  class="card-link btn pink-bck"><small>GitHub</small> </a>
+                          <a href="#" target="_blank"  class="card-link btn pink-bck">Deployed</a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="card-section">
+                    <div class="text-box">
+                        <div class="image-box">
+                            <img src="./img/4project-ga.png" alt="Sanrio Fan Club" />
+                        </div>
+                        <div class="text-container">
+                            <h6>Sanrio Fan Club</h6>
+                            <p class="card-text"><small class="text-muted">Ruby PostgreSQL Ruby on Rails Puma Jbuilder Devise Bootstrap Heroku</small></p>
+                            <p>Solely designed and implemented this application allowings Sanrio fans to create, update and delete their profile and characters. This Ruby on Rails web application was my solo project and utilised PostgreSQL, Devise, Bootstrap, and Heroku. Made use of Devise as a flexible authentication solution.</p>
+                        </div>
+                    </div>
+                    <div class="card-body card-btn">
+                      <a href="https://github.com/nonisaurus/sanrio-fan-club" target="_blank"  class="card-link btn pink-bck"><small>GitHub</small> </a>
+                      <a href="https://sanrio-fan-club.herokuapp.com/" target="_blank"  class="card-link btn pink-bck">Deployed</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="card-section">
+                    <div class="text-box">
+                        <div class="image-box">
+                            <img src="./img/2project-ga.png" alt="Rick and Morty character list" />
+                        </div>
+                        <div class="text-container">
+                            <h6>Rick and Morty Character List</h6>
+                            <p class="card-text"><small class="text-muted">React JavaScript API Integration State Management UI Design</small></p>
+                            <p>I designed and developed a React-based application that integrates with a third-party API to fetch a comprehensive list of characters from Rick and Morty. With features such as searching, filtering, and adding character cards
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-body card-btn">
+                      <a href="https://github.com/nonisaurus/rick-morty-list" target="_blank" class="card-link btn pink-bck">GitHub</a>
+                      <a href="https://rad-clafoutis-3ef283.netlify.app/" target="_blank" class="card-link btn pink-bck">Deployed</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="card-section">
+                  <div class="text-box">
+                      <div class="image-box">
+                          <img src="./img/1project-ga.png" alt="tictactoe game" />
+                      </div>
+                      <div class="text-container">
+                          <h6>Tic-Tac-Toe</h6>
+                          <p class="card-text"><small class="text-muted">HTML CSS JavaScript</small></p>
+                          <p>It was built using HTML, CSS, and JavaScript. The game includes features such as rendering a game board in the browser, switching turns, displaying which side won if a player gets three in a row, using semantic markup for HTML and CSS, and allowing the user to play the game again without refreshing the page.</p>
+                      </div>
+                  </div>
+                  <div class="card-body card-btn">
+                    <a href="https://github.com/nonisaurus/tic-tac-toe" target="_blank" class="card-link btn pink-bck">GitHub</a>
+                      <a href="https://nonisaurus.github.io/tic-tac-toe/" target="_blank" class="card-link btn pink-bck">Deployed</a>
+                  </div>
+              </div>
+            </div>
+
+        </div>
     </div>
   </section>
   
-
-    <!-- Projects -->
-    <section id="projects" >
-      <div class="container">
-        <div class="row align-items-center ">
-          <div class="col grance m-3">
-            <h2>Projects</h2>
-            <p class="fs-6 text-justify pt-3">I'm excited to share my projects with you. </p>
-          </div>
-        </div>
-
-        <div class="container mt-2">
-          <div class="row">
-            <div class="col-md-3 col-sm-6 item">
-                <div class="card item-card card-block">
-                    <img src="./img/1project-ga.png" alt="Photo of sunset">
-                    <h5 class="item-card-title mt-3 mb-3">Tic-Tac-Toe Game</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Solo project - 4 days</h6>
-                    <p class="card-text"><small>My very first project! It was built using HTML, CSS, and JavaScript.</small></p>
-                    <div class="card-body">
-                      <a href="https://github.com/nonisaurus/tic-tac-toe" class="card-link btn pink-bck">GitHub</a>
-                      <a href="https://nonisaurus.github.io/tic-tac-toe/" class="card-link btn pink-bck">Deployed</a>
-                    </div> 
-                </div>
-            </div>
-
-          <div class="col-md-3 col-sm-6 item">
-            <div class="card item-card card-block">
-                <img src="./img/2project-ga.png" alt="Photo of sunset">
-                <h5 class="item-card-title mt-3 mb-3"> Rick & Morty Character List</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Solo project - 5 days</h6>
-                <p class="card-text"><small>React-based application utilised a third-party API to populate a list of Rick and Morty characters.</small> </p> 
-                <div class="card-body">
-                  <a href="https://github.com/nonisaurus/rick-morty-list" class="card-link btn pink-bck">GitHub</a>
-                  <a href="https://rad-clafoutis-3ef283.netlify.app/" class="card-link btn pink-bck">Deployed</a>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 item">
-                <div class="card item-card card-block">
-                  <img src="./img/3project-ga.png" alt="Photo of sunset">
-                  <h5 class="item-card-title mt-3 mb-3">Love Letters</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Solo project - 7 days</h6>
-                  <p class="card-text"><small>Fullstack web application that utilised React.js, MongoDB, NodeJs, and various npm packages.</small> </p> 
-                  <div class="card-body">
-                    <a href="#" class="card-link btn pink-bck">GitHub</a>
-                    <a href="#" class="card-link btn pink-bck">Deployed</a>
-                  </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 item">
-                <div class="card item-card card-block">
-                  <img src="./img/4project-ga.png" alt="Photo of sunset">
-                  <h5 class="item-card-title mt-3 mb-3">Sanrio Fan Club</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Solo project - 4 days</h6>
-                  <p class="card-text"><small>Ruby on Rails web application that utilised PostgreSQL.</small></p> 
-                  <div id="skills" class="card-body">
-                    <a href="https://github.com/nonisaurus/sanrio-fan-club" class="card-link btn pink-bck"><small>GitHub</small> </a>
-                    <a href="https://sanrio-fan-club.herokuapp.com/" class="card-link btn pink-bck">Deployed</a>
-                  </div>
-            </div>
-          </div>    
-        </div>
-      </div>
-    </div>
-  </section>
-
     
 
     <!-- Experience -->
     <!-- <section id="experience" class="container">
-    
     </section> -->
 
     <!-- Skills -->
-    <section class="grance mt-5 mb-5">
-      <div class="container ">
-        <div class="row align-items-center">
-          <h2 class="">Skills</h2>
+    <section id="skills" class="grance mt-5 mb-5">
+      <div class="container-md">
+        <div class="row align-items-center text-center">
+          <h2 class="" >Skills</h2>
           <div class="container p-5 d-flex justify-content-center">
-            <p class="fs-6 text-justify">In recent months, I have explored several programming languages, although I recognise that my experience with most of them is limited. I feel most comfortable with in HTML, CSS and React.  I am eager to deepen my knowledge of any languages. Currently, I am primarily focused on learning more about React, but I remain open to exploring other programming languages and technologies.</p>
+            <p  class="fs-6 lh-lg">In recent months, I have explored several programming languages, although I recognise that my experience with most of them is limited. I feel most comfortable with in HTML, CSS and React.  I am eager to deepen my knowledge of any languages. Currently, I am primarily focused on learning more about React, but I remain open to exploring other programming languages and technologies.</p>
           </div>
-          <div class="container text-center justify-content-center ">
-            <div class="row row-cols-4 fontsize-icon">
-              <div class="col">
-                <i class="devicon-html5-plain-wordmark icon-size"></i>                
-                <p>HTML</p>
-              </div>
-              <div class="col">
-                <i class="devicon-css3-plain-wordmark"></i>
-                <p>CSS</p>
-              </div>
-              <div class="col">
-                <i class="devicon-bootstrap-plain-wordmark"></i>
-                <p>Bootsrap</p>
-              </div>
-              <div class="col">
-                <i class="devicon-javascript-plain"></i>
-                <p>JavaScript</p>
-              </div>
-              <div class="col">
-                <i class="devicon-react-original-wordmark"></i>
-                <p>React</p>
-              </div>
-              <div class="col">
-                <i class="devicon-nodejs-plain"></i>
-                <p>Node.js</p>
-              </div>
-              <div class="col">
-                <i class="devicon-express-original-wordmark"></i>
-                <p>Express</p>
-              </div>
-              <div class="col">
-                <i class="devicon-postgresql-plain-wordmark"></i>
-                <p>PostgreSQL</p>
-              </div>
-              <div class="col">
-                <i class="devicon-mongodb-plain-wordmark"></i>
-                <p>MongoDB</p>
-              </div>
-              <div class="col">
-                <i class="devicon-ruby-plain-wordmark"></i>
-                <p>Ruby</p>
-              </div>
-              <div class="col">
-                <i class="devicon-npm-original-wordmark"></i>
-                <p>npm</p>
-              </div>
-              <div id="interest" class="col">
-                <i class="devicon-github-original-wordmark"></i>
-                <p>GitHub</p>
-              </div>
+        </div>
 
+        <div class="container text-center justify-content-center ">
+          <div class="row row-cols-4 fontsize-icon">
+            <div class="col">
+              <i class="devicon-html5-plain-wordmark icon-size"></i>                
+              <p>HTML</p>
             </div>
+            <div class="col">
+              <i class="devicon-css3-plain-wordmark"></i>
+              <p>CSS</p>
+            </div>
+            <div class="col">
+              <i class="devicon-bootstrap-plain-wordmark"></i>
+              <p>Bootsrap</p>
+            </div>
+            <div class="col">
+              <i class="devicon-javascript-plain"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="col">
+              <i class="devicon-react-original-wordmark"></i>
+              <p>React</p>
+            </div>
+            <div class="col">
+              <i class="devicon-nodejs-plain"></i>
+              <p>Node.js</p>
+            </div>
+            <div class="col">
+              <i class="devicon-express-original-wordmark"></i>
+              <p>Express</p>
+            </div>
+            <div class="col">
+              <i class="devicon-postgresql-plain-wordmark"></i>
+              <p>PostgreSQL</p>
+            </div>
+            <div class="col">
+              <i class="devicon-mongodb-plain-wordmark"></i>
+              <p>MongoDB</p>
+            </div>
+            <div class="col">
+              <i class="devicon-ruby-plain-wordmark"></i>
+              <p>Ruby</p>
+            </div>
+            <div class="col">
+              <i class="devicon-npm-original-wordmark"></i>
+              <p>npm</p>
+            </div>
+            <div id="interest" class="col">
+              <i class="devicon-github-original-wordmark"></i>
+              <p>GitHub</p>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
     <!-- Interest -->
-    <section  class="grance mt-5 mb-5">
-      <div class="container ">
-        <div class="row align-items-center">
-          <h2 class="">Interests</h1>
-          <div class="container p-5 d-flex justify-content-center">
-            <p class="fs-6 text-justify">I'm always on the hunt for new adventure spots! If I had to pick just one favourite city, it'd have to be Kyoto. When I'm not traipsing through the concrete jungle, I like to stretch my legs and explore the great outdoors (otherwise knows as hiking). Bonus points if my hubby and furry four legged baby can come along for the journey.
-              <br><br>
-            I am a hobby baker who is trying to figure out how to make the perfect sourdough bread (no success so far) and pump more flavor into her cakes. To utilsie this I volunteer at the local library to bake for their events.
-            <br><br>
-            I am mildy addicted to video games. Currently playing Apex Legends and Don't Starve.</p>
+  <section id="about" class="grance mt-5 mb-2">
+    <div class="container-md">
+      <div class="row align-items-center text-center pt-2">
+        <h2 class="pb-5">Interest</h2>
+        <div class="container pb-5">
+          <div class="row">
+    
+            <div class="col-sm-4 int-pic">
+                <figure class="softeffect">
+                  <img src="./img/portfolio1.jpeg" class="img-responsive" alt="my hobby 1" />
+                  <figcaption class="text-center justify-content-center">
+                    <p>When I'm not traipsing through the concrete jungle, I like to stretch my legs and explore the great outdoors (otherwise knows as hiking). Bonus points if my hubby and furry four legged baby can come along for the journey.</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+    
+            <div class="col-sm-4 int-pic">
+                <figure class="softeffect">
+                  <img src="./img/portfolio3.jpeg" class="img-responsive" alt="my hobby 2" />
+                  <figcaption>
+                    <p>I am a hobby baker who is trying to figure out how to make the perfect sourdough bread (no success so far) and pump more flavour into her cakes. To utilsie this I volunteer at the local library to bake for their events.</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+    
+            <div class="col-sm-4 int-pic">
+                <figure class="softeffect">
+                  <img src="./img/portfolio2.jpeg" class="img-responsive" alt="my hobby 3" />
+                  <figcaption>
+
+                    <p>I am mildy addicted to video and board games. Currently playing playing Apex Legends online, as well as various other offline games such as Catan, Takenoko, Love Letters, and more.</p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
 
     <!-- Contact -->
-    <section id="contact" class="grance mt-5 mb-5">
-      <div class="container ">
-          <h2 class="">Reach Out</h1>
-          <div class="container mt-5">
-              <h2>Noni Summers</h2>
-              <p>noni.summers@yahoo.com</p>
-          </div>
-          <div class="container mt-5">
-            <p>CONNECT WITH ME</p>
-            <div class="d-flex flex-row">
-              <i class="devicon-linkedin-plain p-2"><a href="https://www.linkedin.com/in/nonisaurus/"></a></i>
-              <i class="devicon-github-original colored p-2"><a href="https://github.com/nonisaurus"></a></i>
-            </div>
-            
-          </div>
+    <section id="contact" class="container grance my-5">
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <img class="w-100" src="./img/portfolioPIC2.png" />
         </div>
-      </div>
-    </section>
+        <div class="col-lg-6">
+          <div class="pt-5 mt-4">
+            <h1 class="">Reach Out</h1>
+            <div class="mt-5">
+                <h2 class="">Noni Summers</h2>
+                <p>noni.summers@yahoo.com</p>
+            </div>
+            <div class="mt-5">
+              <p>CONNECT WITH ME</p>
+              <div class="d-flex flex-row connect-links">
+               <a href="https://www.linkedin.com/in/nonisaurus/"> <i class="devicon-linkedin-plain p-2"></i></a>
+               <a href="https://github.com/nonisaurus"> <i class="devicon-github-original colored p-2"></a></i>
+              </div>
+            </div>
+            </div>
+        </div>
+      </section>
 
     <!-- Footer -->
      <footer id="footer">
