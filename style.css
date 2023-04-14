@@ -35,6 +35,11 @@
   color: #fafbd1;
 }
 
+.profile-pic-hair{
+  border-radius: 55%;
+  box-shadow: 5px 5px 5px rgb(230, 202, 230);
+}
+
 /*----  Navbar  ----*/
 .navbarlinks {
   font-family: 'grance';
