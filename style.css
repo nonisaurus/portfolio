@@ -25,7 +25,6 @@
   border: solid 2px rgb(245, 192, 255);
   box-shadow: 2%;
   color: #a992de;
-
 }
 
 .pink-bck:hover {
@@ -97,7 +96,7 @@ body {
 #projects .card-section .image-box{
   background: rgb(255, 255, 255, 1);
   overflow: hidden;
-  box-shadow: 0px 2px 15px rgb(251, 255, 197);
+  box-shadow: 1px 2px 15px rgb(251, 255, 197);
   border-radius: 2%;
 }
 
@@ -135,7 +134,7 @@ body {
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  box-shadow: 0px 3px 4px rgba(251, 11, 255, 0.2);
+  box-shadow: 1px 3px 4px rgba(251, 11, 255, 0.2);
 }
 
 #projects .card-section:hover{
